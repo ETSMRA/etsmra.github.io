@@ -7,6 +7,7 @@ h1 {
 	font-size: 3em;
 }
 h2, h3 {
+	background-color: #212121;
 	color: #28ae55;
 }
 section {
