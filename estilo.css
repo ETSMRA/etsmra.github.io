@@ -3,16 +3,41 @@ body {
 	text-align: center;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+header, footer {
+	display: flex;
+	justify-content: space-around;
+	background-color: white;
+}
+
+#escuela {
+	width: 30%;
+}
+
+#ayto {
+	width: 80%;
+}
+
 h1 {
-	font-size: 3em;
+	width: 90%;
+	font-size: 2.3vw;
+	margin:auto;
+	color: #28ae55;
+	text-align: center;
 }
 h2, h3 {
 	background-color: #212121;
+	font-size: 2vw;	
 	color: #28ae55;
+}
+h3 {
+	font-size: 1.5vw;
 }
 section {
 	margin: auto;
-	width: 70%;
+	width: 80%;
 	height: auto;
-	font-size: 1.25em;
+	font-size: 1.15em;
+}
+footer p {
+	width: 80%;
 }
