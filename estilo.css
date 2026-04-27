@@ -9,11 +9,11 @@ header, footer {
 	background-color: white;
 }
 
-#escuela {
+.escuela {
 	width: 30%;
 }
 
-#ayto {
+.ayto {
 	width: 80%;
 }
 
