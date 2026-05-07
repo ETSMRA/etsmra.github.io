@@ -1,33 +1,3 @@
-// Weather api 
-const API_KEY = "b31235d5cc58dfc8950b81d37368ad9c";
-const City = "San Martin del Rey Aurelio";
-
-async function getWeather() {
-    try {
-        const response = await fetch(
-            `https://api.openweathermap.org/data/2.5/weather?q=${City}&units=metric&appid=${API_KEY}&lang=es`
-        );
-
-        const data = await response.json();
-
-        
-
-  
-        if (data.cod !== 200) {
-            throw new Error(data.message);
-        }
-
-        document.getElementById("temp").innerText = Math.round(data.main.temp) + "°C";
-        document.getElementById("condition").innerText = data.weather[0].description;
-
-    } catch (error) {
-        console.log("Erro ao buscar clima:", error);
-    }
-}
-
-getWeather();
-
-
 // Header Shadow
 
 window.addEventListener('scroll', function() {
