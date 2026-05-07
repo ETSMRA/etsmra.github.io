@@ -75,6 +75,7 @@ nav a:hover{
     text-decoration: none;
     display: inline-block;
     transition: 0.3s;
+    color: #000;
 }
 
 .btn:hover {
