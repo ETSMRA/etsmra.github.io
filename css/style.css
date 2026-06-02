@@ -31,7 +31,7 @@ html {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 3;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -156,15 +156,16 @@ nav a:hover{
     padding-left: 0.6rem;
 }
 
-.icons a{
+.icons strong{
     text-decoration: none;
     color: #212121;
     font-size: 1.3rem;
     transition: 0.3s;
 }
 
-.icons a:hover{
+.icons strong:hover{
     color: #28AE56;
+    cursor: pointer;
 }
 
 /* CARDS */
