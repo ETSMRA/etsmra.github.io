@@ -55,9 +55,6 @@ hamburger.addEventListener('click', () => {
 // Incorporado 27/05. Eventos para Dudas
 
 document.getElementById('icons1').addEventListener('click',function () { this.innerHTML='Programas de empleo y formación de carácter temporal, para mejorar la empleabilidad de jovenes desempleados/as mediante la cualificación en certificados de profesionalidad y la ejecución de obras de utilidad pública'; this.style.fontSize='small'});
-/*
-document.getElementById('icons1').addEventListener('mouseout',function () { this.innerHTML='¿Qué es una Escuela Taller?'; this.style.fontSize='large'});
-*/
 
 document.getElementById('icons2').addEventListener('click',function () { this.innerHTML='Centro de Educación de Adultos del Nalón <br>Palacio Valdés, s/n <br> Sotrondio 33950'; this.style.fontSize='small'});
 
