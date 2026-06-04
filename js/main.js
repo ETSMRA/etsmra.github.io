@@ -32,7 +32,7 @@ if (slides.length > 0) {
     setInterval(showSlide, 3500);
 }
 
-setInterval(showSlide, 3500);
+// setInterval(showSlide, 3500);
 
 
 // Hamburger menu
