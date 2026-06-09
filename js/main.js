@@ -32,9 +32,9 @@ if (slides.length > 0) {
      // Eliminar el banner-content 
    setTimeout(function() { 
             document.getElementsByClassName('banner-content')[0].style.opacity = 0;
-            } , 3000);
+            } , 2000);
             
-   setInterval(showSlide, 3500);
+   setInterval(showSlide, 3000);
 }
 
 // setInterval(showSlide, 3500);
