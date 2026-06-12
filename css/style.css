@@ -361,9 +361,10 @@ footer {
 
     .locations{
         padding: 5rem 0rem;
+        margin: 0;
     } 
     .banner-main{
-       height: 700px
+       height: 32em;
     }
 
     .banner-content{
