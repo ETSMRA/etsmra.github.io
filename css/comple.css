@@ -11,14 +11,15 @@
     background: #fff;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1); 
+    height: 450px;
 }
 
 
 .carousel-images {
     flex: 1.5;
     position: relative;
-    height: 450px;
+
     background-color: #eee;
 }
 
@@ -43,6 +44,7 @@
     flex-direction: column;
     justify-content: space-between;
     background: #f9f9f9;
+    overflow-y: scroll;
 }
 
 .info-tab {
