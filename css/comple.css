@@ -19,7 +19,6 @@
 .carousel-images {
     flex: 1.5;
     position: relative;
-
     background-color: #eee;
 }
 
@@ -169,6 +168,10 @@
     opacity: 1;
     filter: blur(0);
     transform: translateY(0);
+}
+
+.news-content-box p {
+    margin-bottom: 0em;
 }
 
 
