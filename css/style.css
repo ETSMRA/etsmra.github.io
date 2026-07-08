@@ -124,6 +124,7 @@ nav a:hover{
     color: white;
     padding: 1rem; 
     border-radius: 10px;
+    opacity: 1;
 }
 
 /* LOCATIONS */
@@ -361,10 +362,9 @@ footer {
 
     .locations{
         padding: 5rem 0rem;
-        margin: 0;
     } 
     .banner-main{
-       height: 32em;
+       height: 32rem
     }
 
     .banner-content{
@@ -455,4 +455,7 @@ footer {
     margin-top: 5px;
 }
 
+ .locations {
+    margin: 0;
+ }
 }
