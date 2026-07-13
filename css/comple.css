@@ -59,7 +59,7 @@
 
 .info-tab.active {
     background-color: #ffffff;
-    border-left-color: #28AE56; 
+    border-left-color: #c71d3a; 
 }
 
 .info-tab h3 {
@@ -87,7 +87,7 @@
 }
 
 .btn-sm:hover {
-    background-color: #28AE56;
+    background-color: #c71d3a;
 }
 /* News */
 
@@ -145,7 +145,7 @@
     margin: 0;
     font-size: 1.8rem;
     color: #3B68B5; 
-    border-bottom: 2px solid #28AE56; 
+    border-bottom: 2px solid #c71d3a; 
     padding-bottom: 8px;
     
 }

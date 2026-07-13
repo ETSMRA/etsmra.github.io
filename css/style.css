@@ -36,6 +36,7 @@ html {
     align-items: center;
     justify-content: space-around;
     background-color: white;
+    border-bottom: 0.25rem solid #c71d3a;
 }
 
 .header-row.scrolled {
@@ -62,25 +63,26 @@ nav a{
 }
 
 nav a:hover{
-    color: #28AE56;
+    color: #c71d3a ;
 }
 
 /* BOTÃO NOVO */
 .btn {
     cursor: pointer;
-    background-color: #28AE56;
+    background-color: #c71d3a;
     padding: 0.8rem;
     border-radius: 0.5rem;
     font-size: 1.1rem;
     text-decoration: none;
     display: inline-block;
     transition: 0.3s;
-    color: #000;
+    color: #fff;
 }
 
 .btn:hover {
-    color: #212121;
-    background-color: #28ae57af;
+    color: #c71d3a;
+    background-color: #FFFF;
+    border: 1px solid #c71d3a; ;
 }
 
 /* LOGO */
@@ -165,7 +167,7 @@ nav a:hover{
 }
 
 .icons strong:hover{
-    color: #28AE56;
+    color: #c71d3a;
     cursor: pointer;
 }
 
@@ -295,7 +297,7 @@ footer {
 }
 
 .footer-column h3 {
-    color: #28AE56;
+    color: #c71d3a;
 }
 
 .footer-column ul {
@@ -314,7 +316,7 @@ footer {
 }
 
 .footer-column a:hover {
-    color: #28AE56;
+    color: #c71d3a;
 }
 
 .logos-column img {
