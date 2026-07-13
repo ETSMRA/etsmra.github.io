@@ -28,13 +28,12 @@ if (slides.length > 0) {
             index = 0;
         }
     }
-
-     // Eliminar el banner-content 
+ // Eliminar el banner-content 
    setTimeout(function() { 
             document.getElementsByClassName('banner-content')[0].style.opacity = 0;
             } , 2000);
             
-   setInterval(showSlide, 3000);
+    setInterval(showSlide, 3000);
 }
 
 // setInterval(showSlide, 3500);
@@ -68,7 +67,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const images = document.querySelectorAll(".carousel-img");
     const tabs = document.querySelectorAll(".info-tab");
 
-    
     if (images.length === 0 || tabs.length === 0) return;
 
     let currentIndex = 0;
@@ -91,6 +89,14 @@ document.addEventListener("DOMContentLoaded", () => {
         tabs[index].classList.add("active");
 
         currentIndex = index;
+        
+   /* Animación de la barra lateral del carrusel */
+    const sidebar = document.querySelector(".carousel-info-sidebar");
+
+    sidebar.scrollTo({
+        top: tabs[index].offsetTop -110, 
+     /*   behavior: "smooth" */
+    });
     }
 
     function startAutoSlide() {
@@ -107,8 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
     tabs.forEach((tab, index) => {
 
         tab.addEventListener("click", (e) => {
-
-            
+       
             if (e.target.classList.contains('btn-sm')) return;
 
             clearInterval(carouselInterval);
@@ -119,7 +124,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
     });
-
 
     changeSlide(0);
     startAutoSlide();
@@ -152,3 +156,4 @@ if (icons3) {
         this.style.fontSize = 'small';
     });
 }
+
