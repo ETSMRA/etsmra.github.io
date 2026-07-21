@@ -1,159 +1,308 @@
-// Header Shadow
+// ================================
+// HEADER SHADOW
+// ================================
 
-window.addEventListener('scroll', function() {
-    const header = document.querySelector('.header-row');
+window.addEventListener("scroll", () => {
+
+    const header = document.querySelector(".header-row");
+
+    if (!header) return;
 
     if (window.scrollY > 10) {
-        header.classList.add('scrolled');
+        header.classList.add("scrolled");
     } else {
-        header.classList.remove('scrolled');
+        header.classList.remove("scrolled");
     }
+
 });
 
-// carousel
-const slides = document.querySelectorAll('.carousel img');
+
+// ================================
+// CAROUSEL HOME (Banner)
+// ================================
+
+const slides = document.querySelectorAll(".carousel img");
 
 if (slides.length > 0) {
+
     let index = 0;
 
     function showSlide() {
-        slides.forEach(slide => slide.classList.remove('active'));
 
-        if (!slides[index]) return;
+        slides.forEach(slide =>
+            slide.classList.remove("active")
+        );
 
-        slides[index].classList.add('active');
+        slides[index].classList.add("active");
 
         index++;
-        if (index >= slides.length) {
+
+        if (index >= slides.length)
             index = 0;
-        }
+
     }
- // Eliminar el banner-content 
-   setTimeout(function() { 
-            document.getElementsByClassName('banner-content')[0].style.opacity = 0;
-            } , 2000);
-            
+
+    setTimeout(() => {
+
+        const banner = document.querySelector(".banner-content");
+
+        if (banner)
+            banner.style.opacity = 0;
+
+    }, 2000);
+
     setInterval(showSlide, 3000);
+
 }
 
-// setInterval(showSlide, 3500);
 
+// ================================
+// INTERSECTION OBSERVER
+// ================================
 
-// Hamburger menu
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
+const observer = new IntersectionObserver(entries => {
+
+    entries.forEach(entry => {
+
         if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-        } 
+
+            entry.target.classList.add("show");
+
+        }
+
     });
+
 });
 
 
-const elementsToAnimate = document.querySelectorAll('.hidden');
-elementsToAnimate.forEach((el) => observer.observe(el));
+function animationStart() {
+
+    document.querySelectorAll(".hidden").forEach(el => {
+
+        observer.observe(el);
+
+    });
+
+}
 
 
-const hamburger = document.querySelector('.hamburger');
-const menu = document.getElementById('menu');
+// ================================
+// MENU HAMBURGER
+// ================================
 
-hamburger.addEventListener('click', () => {
-    menu.classList.toggle('active');
+const hamburger = document.querySelector(".hamburger");
+const menu = document.getElementById("menu");
+
+if (hamburger && menu) {
+
+    hamburger.addEventListener("click", () => {
+
+        menu.classList.toggle("active");
+
+    });
+
+}
+
+
+// ================================
+// DÚDAS
+// ================================
+
+const icons1 = document.getElementById("icons1");
+
+if (icons1) {
+
+    icons1.addEventListener("click", function () {
+
+        this.innerHTML =
+            "Programas de empleo y formación de carácter temporal, para mejorar la empleabilidad de jóvenes desempleados/as mediante la cualificación en certificados de profesionalidad y la ejecución de obras de utilidad pública";
+
+        this.style.fontSize = "small";
+
+    });
+
+}
+
+
+const icons2 = document.getElementById("icons2");
+
+if (icons2) {
+
+    icons2.addEventListener("click", function () {
+
+        this.innerHTML =
+            "Centro de Educación de Adultos del Nalón <br> Palacio Valdés, s/n <br> Sotrondio 33950";
+
+        this.style.fontSize = "small";
+
+    });
+
+}
+
+
+const icons3 = document.getElementById("icons3");
+
+if (icons3) {
+
+    icons3.addEventListener("click", function () {
+
+        this.innerHTML =
+            "Comenzamos el 1 de abril de 2026 con la fase de formación y posteriormente el 01 de julio de 2026 se comienza la fase de obra hasta el 31 de marzo de 2027";
+
+        this.style.fontSize = "small";
+
+    });
+
+}
+
+
+// ================================
+// NEWS PAGE
+// ================================
+
+document.addEventListener("DOMContentLoaded", async () => {
+
+    animationStart();
+
+    try {
+
+        const response = await fetch("./news.json");
+
+        if (!response.ok) {
+            throw new Error("No json found");
+        }
+
+        const news = await response.json();
+
+        createNews(news);
+
+        initializeNewsCarousel();
+
+        animationStart();
+
+    } catch (error) {
+
+        console.error(error);
+
+    }
+
 });
 
+function createNews(news) {
 
-// Carousel noticias
-document.addEventListener("DOMContentLoaded", () => {
+    const carousel = document.querySelector(".carousel-images");
+    const sidebar = document.querySelector(".carousel-info-sidebar");
+    const newsContainer = document.querySelector(".main-news-section");
 
-    const images = document.querySelectorAll(".carousel-img");
+    if (!carousel || !sidebar || !newsContainer) {
+        return;
+    }
+
+    carousel.innerHTML = "";
+    sidebar.innerHTML = "";
+    newsContainer.innerHTML = "";
+
+
+    news.forEach((item, index) => {
+
+        // Images
+        carousel.innerHTML += `
+            <img
+                src="${item.image}"
+                alt="${item.alt}"
+                class="carousel-img ${index === 0 ? "active" : ""}">
+        `;
+
+        // Sidebar
+        sidebar.innerHTML += `
+            <div class="info-tab ${index === 0 ? "active" : ""}">
+                <h3>${item.title}</h3>
+                <p>${item.summary}</p>
+                <a href="#news-${item.id}" class="btn-sm">Ver más</a>
+            </div>
+        `;
+
+        // News
+        newsContainer.innerHTML += `
+            <article class="news-block hidden" id="news-${item.id}">
+
+                <div class="news-image-box">
+                    <img src="${item.image}" alt="${item.alt}">
+                </div>
+
+                <div class="news-content-box">
+
+                    <h3>${item.title}</h3>
+
+                    ${item.content.map(paragraph => `
+                        <p>${paragraph}</p>
+                    `).join("")}
+
+                </div>
+
+            </article>
+        `;
+    });
+
+}
+
+function initializeNewsCarousel(){
+
+    const image = document.querySelectorAll(".carousel-img");
     const tabs = document.querySelectorAll(".info-tab");
 
-    if (images.length === 0 || tabs.length === 0) return;
+    if(image.length===0) return;
 
-    let currentIndex = 0;
-    let carouselInterval;
+    let currentIndex=0;
+    let interval;
 
-    function changeSlide(index) {
+    function changeSlide(index){
 
-        images.forEach(img => {
-            img.classList.remove("active");
-        });
+        image.forEach(img=>img.classList.remove("active"));
+        tabs.forEach(tab=>tab.classList.remove("active"));
 
-        tabs.forEach(tab => {
-            tab.classList.remove("active");
-        });
-
-        
-        if (!images[index] || !tabs[index]) return;
-
-        images[index].classList.add("active");
+        image[index].classList.add("active");
         tabs[index].classList.add("active");
 
-        currentIndex = index;
-        
-   /* Animación de la barra lateral del carrusel */
-    const sidebar = document.querySelector(".carousel-info-sidebar");
+        currentIndex=index;
 
-    sidebar.scrollTo({
-        top: tabs[index].offsetTop -110, 
-     /*   behavior: "smooth" */
-    });
+        document.querySelector(".carousel-info-sidebar").scrollTo({
+
+            top:tabs[index].offsetTop-110,
+            behavior:"smooth"
+
+        });
+
     }
 
-    function startAutoSlide() {
+    function auto(){
 
-        carouselInterval = setInterval(() => {
+        interval=setInterval(()=>{
 
-            let nextIndex = (currentIndex + 1) % images.length;
+            changeSlide((currentIndex+1)%image.length);
 
-            changeSlide(nextIndex);
+        },6000);
 
-        }, 5000);
     }
 
-    tabs.forEach((tab, index) => {
+    tabs.forEach((tab,index)=>{
 
-        tab.addEventListener("click", (e) => {
-       
-            if (e.target.classList.contains('btn-sm')) return;
+        tab.addEventListener("click",e=>{
 
-            clearInterval(carouselInterval);
+            if(e.target.classList.contains("btn-sm")) return;
+
+            clearInterval(interval);
 
             changeSlide(index);
 
-            startAutoSlide();
+            auto();
+
         });
 
     });
 
     changeSlide(0);
-    startAutoSlide();
 
-});
+    auto();
 
-// Incorporado 27/05. Eventos para Dudas
-
-const icons1 = document.getElementById('icons1');
-const icons2 = document.getElementById('icons2');
-const icons3 = document.getElementById('icons3');
-
-if (icons1) {
-    icons1.addEventListener('click', function () {
-        this.innerHTML = 'Programas de empleo y formación de carácter temporal, para mejorar la empleabilidad de jóvenes desempleados/as mediante la cualificación en certificados de profesionalidad y la ejecución de obras de utilidad pública';
-        this.style.fontSize = 'small';
-    });
 }
-
-if (icons2) {
-    icons2.addEventListener('click', function () {
-        this.innerHTML = 'Centro de Educación de Adultos del Nalón <br>Palacio Valdés, s/n <br>Sotrondio 33950';
-        this.style.fontSize = 'small';
-    });
-}
-
-if (icons3) {
-    icons3.addEventListener('click', function () {
-        this.innerHTML = 'Comenzamos el 1 de abril de 2026 con la fase de formación y posteriormente el 01 de julio de 2026 se comienza la fase de obra hasta el 31 de marzo de 2027';
-        this.style.fontSize = 'small';
-    });
-}
-
