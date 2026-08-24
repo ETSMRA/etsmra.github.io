@@ -1,5 +1,17 @@
 [
   {
+    "id": 15,
+    "title": "CUBIERTAS COMIENZA SUS PRÁCTICAS",
+    "summary": "El alumnado-trabajador del Certificado de Profesionalidad de Operaciones Auxiliares de Albañilería de Fábricas y Cubiertas ha comenzado...",
+    "image": "assets/imgs/cubiertas.jpg",
+    "alt": "Trabajadores de cubiertas",
+    "content": [
+      "El alumnado-trabajador del Certificado de Profesionalidad de Operaciones Auxiliares de Albañilería de Fábricas y Cubiertas ha comenzado a realizar prácticas en entornos reales, donde puede poner en práctica los conocimientos adquiridos durante su formación",
+      "De esta manera, continúan reforzando lo aprendido y adquiriendo experiencia de cara a la realización de diferentes obras en el concejo."
+     ]
+  },
+[
+  {
     "id": 14,
     "title": "Campamento Escuela Taller VERANIN EN SAMARTIN",
     "summary": "El alumnado-trabajador del certificado de profesionalidad de Dinamización de Actividades de Tiempo Libre Educativo Infantil y Juvenil ha comenzado este lunes 10 de agosto ...",
@@ -14,7 +26,7 @@
   },
   {
     "id": 13,
-    "title": "JARDINERÍA  INICIA SUS TRABAJOS EN EL CONCEJO",
+    "title": "JARDINERÍA INICIA SUS TRABAJOS EN EL CONCEJO",
     "summary": "El alumnado-trabajador del Certificado de Profesionalidad de Jardinería ha iniciado sus tareas de limpieza y desbroce....",
     "image": "assets/imgs/obra_jardine.jpg",
     "alt": "obra_jardine",
