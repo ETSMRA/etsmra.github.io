@@ -1,4 +1,16 @@
 [
+ {
+    "id": 15,
+    "title": "CLASES DE ESPAÑOL",
+    "summary": "Desde la Escuela Taller estamos llevando a cabo clases de español...",
+    "image": "assets/imgs/idioma.jpg",
+    "alt": "Trabajadores de la escuela taller",
+    "content": [
+      "Desde la Escuela Taller estamos llevando a cabo clases de español para ayudar al alumnado a mejorar el idioma y desenvolverse con mayor facilidad en su día a día.",
+      "Las clases están teniendo una buena acogida y los jóvenes muestran mucho interés y participación. A lo largo de las sesiones se trabajan aspectos como el vocabulario, la expresión oral y diferentes situaciones de la vida cotidiana.",
+      "Con estas clases, el alumnado del programa va ganando poco a poco confianza a la hora de comunicarse, tanto en su entorno personal como profesional."
+     ]
+  },
   {
     "id": 14,
     "title": "CUBIERTAS COMIENZA SUS PRÁCTICAS",
