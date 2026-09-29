@@ -1,5 +1,16 @@
 [
  {
+    "id": 16,
+    "title": "CURSO DE MOTOSIERRA",
+    "summary": "El grupo de Jardinería de la Escuela Taller acaba de finalizar un curso de manejo de motosierra...",
+    "image": "assets/imgs/motosierra.jpg",
+    "alt": "Trabajadores de la escuela taller de jardinería",
+    "content": [
+      "El grupo de Jardinería de la Escuela Taller acaba de finalizar un curso de manejo de motosierra.",
+      "A través de esta formación, el alumnado-trabajador ha adquirido nuevos conocimientos y habilidades que serán de gran utilidad a la hora de incorporarse al mercado laboral. Asimismo, esta formación les permitirá complementar los conocimientos, la experiencia y las competencias que están adquiriendo durante su formación en la Escuela Taller.",
+   ]
+  },
+ {
     "id": 15,
     "title": "CLASES DE ESPAÑOL",
     "summary": "Desde la Escuela Taller estamos llevando a cabo clases de español...",
