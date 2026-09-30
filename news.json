@@ -1,4 +1,16 @@
 [
+  {
+    "id": 17,
+    "title": "CURSO DE ALMACÉN",
+    "summary": "Los alumnos y alumnas de los Certificados de profesionalidad de nivel 1...",
+    "image": "assets/imgs/curso_almacen.jpg",
+    "alt": "Curso de almacén",
+    "content": [
+      "Los alumnos y alumnas de los Certificados de profesionalidad de nivel 1 de Operaciones auxiliares de albañilería de fábricas y Operaciones auxiliares de acabados rígidos y urbanización están realizando un Curso de almacén.",
+      "Esta formación les permitirá adquirir nuevos conocimientos y habilidades que podrán serles de utilidad a la hora de buscar empleo y ampliar sus oportunidades laborales.",
+      "Además, les ayudará a complementar la formación de los certificados que están cursando."
+   ]
+  },
  {
     "id": 16,
     "title": "CURSO DE MOTOSIERRA",
