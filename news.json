@@ -1,4 +1,16 @@
 [
+    {
+    "id": 19,
+    "title": "CURSO DE SEÑALIZACIÓN",
+    "summary": "El alumnado de la Escuela Taller ha participado en un curso de señalización...",
+    "image": "assets/imgs/obra urbanizacion.jpg",
+    "alt": "Curso de señalizacion",
+    "content": [
+      "El alumnado de la Escuela Taller ha participado en un curso de señalización impartido por el formador Javier, con el objetivo de ampliar sus conocimientos y seguir mejorando su formación.",
+      "El curso se desarrolló en dos sesiones, en las que se trataron diferentes aspectos relacionados con la señalización.",
+      "Con esta formación, el alumnado continúa adquiriendo nuevos conocimientos y habilidades que podrán ser de utilidad en su futuro personal y profesional."
+    ]
+  },
   {
     "id": 18,
     "title": "TRABAJOS DE ALBAÑILERÍA",
