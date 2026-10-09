@@ -1,4 +1,15 @@
 [
+     {
+    "id": 20,
+    "title": "FORMACIONES EN LA ESCUELA DE MAQUINARIA DEL GRUPO ROXU",
+    "summary": "A lo largo del mes de septiembre, el alumnado-trabajador ha realizado tres cursos de formación en la Escuela Europea de Maquinaria, del Grupo ROXU...",
+    "image": "assets/imgs/roxu.jpg",
+    "alt": "Curso de extincion de incendios",
+    "content": [
+      "A lo largo del mes de septiembre, el alumnado-trabajador ha realizado tres cursos de formación en la Escuela Europea de Maquinaria, del Grupo ROXU: Trabajos en altura, Extinción de incendios y Espacios confinados.",
+      "Los tres cursos han combinado contenidos teóricos y prácticos, permitiendo al alumnado conocer los principales riesgos, las medidas preventivas y los procedimientos de seguridad de cada actividad, así como poner en práctica los conocimientos adquiridos para mejorar sus competencias profesionales".
+    ]
+  },
     {
     "id": 19,
     "title": "CURSO DE SEÑALIZACIÓN",
