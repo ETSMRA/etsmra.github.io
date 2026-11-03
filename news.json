@@ -1,4 +1,16 @@
 [
+    {
+    "id": 23,
+    "title": "GRUPO DE JARDINERÍA EN ACCIÓN",
+    "summary": "Los trabajos incluyen labores de limpieza, desbroce, retirada de maleza...",
+    "image": "assets/imgs/jardineria.jpg",
+    "alt": "Trabajos de jardinería",
+    "content": [
+     "El alumnado-trabajador del “Certificado de Profesionalidad de Instalación y Mantenimiento de Jardines y Zonas Verdes” está realizando diferentes actuaciones en varias ubicaciones de San Martín del Rey Aurelio.",
+     "Los trabajos incluyen labores de limpieza, desbroce, retirada de maleza, poda y acondicionamiento de jardines y zonas verdes, contribuyendo a mejorar y conservar los espacios públicos del municipio."
+
+    ]
+  },  
   {
     "id": 22,
     "title": "TERROR EN EL CEPA-NALÓN",
