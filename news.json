@@ -1,5 +1,18 @@
 [
-        {
+   {
+    "id": 29,
+    "title": "25N",
+    "summary": "El alumnado de Español de la Escuela Taller está participando en una serie de juegos y actividades...",
+    "image": "assets/imgs/25N.jpg",
+    "alt": "Convivencia",
+    "content": [
+      {
+         "El alumnado-trabajador del Certificado de Profesional de Dinamización ha colaborado en las actividades organizadas con motivo del 25N, junto con la concejalía de Igualdad.",
+        "Durante la jornada, participaron en la elaboración de un mapa como actividad de sensibilización y reflexión, contribuyendo a visibilizar la importancia de la igualdad y de la lucha contra la violencia hacia las mujeres.",
+        "Una iniciativa de participación, aprendizaje y compromiso con una sociedad más igualitaria y libre de violencia." 
+       ]
+ },  
+   {
     "id": 28,
     "title": "DIVERSIÓN Y APRENDIZAJE",
     "summary": "El alumnado de Español de la Escuela Taller está participando en una serie de juegos y actividades...",
@@ -9,7 +22,7 @@
       "El alumnado de Español de la Escuela Taller está participando en una serie de juegos y actividades dinámicas junto a los alumnos y alumnas del Certificado Profesional de Dinamización, creando un espacio de encuentro, convivencia y aprendizaje compartido.",
       "A través de estas propuestas, ambos grupos disfrutan de momentos divertidos mientras trabajan y desarrollan sus habilidades comunicativas, fomentan la participación y fortalecen las relaciones sociales.",
       "Estas actividades se convierten en una oportunidad para aprender unos de otros, compartir experiencias y disfrutar de un ambiente cercano, inclusivo y enriquecedor, en el que la diversión y el aprendizaje van de la mano."
-                ]
+      ]
  },  
       {
     "id": 27,
